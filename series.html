@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Iraklis — Sculptor in marble &amp; stone</title>
+  <meta name="description" content="A series of works by Iraklis, sculptor in marble and stone on Mount Athos.">
+  <meta name="theme-color" content="#F2EEE7">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="assets/img/site/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/marcellus-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/data.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="series">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="site-header__bar">
+      <p class="site-header__tagline">Sculptor · Mount Athos</p>
+      <a class="brand" href="index.html" aria-label="Iraklis — home">IRAKLIS</a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="works.html" aria-current="page"><span class="u">Works</span></a>
+        <a href="index.html#about"><span class="u">About</span></a>
+        <a href="contact.html"><span class="u">Contact</span></a>
+      </nav>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu"><span class="menu-btn__label">Menu</span><span class="menu-btn__icon" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <nav aria-label="Mobile">
+      <a href="works.html" aria-current="page">Works <span class="caps">01</span></a>
+      <a href="index.html#about">About <span class="caps">02</span></a>
+      <a href="contact.html">Contact <span class="caps">03</span></a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="mailto:narikaleli1@gmail.com">narikaleli1@gmail.com</a>
+      <a href="tel:+306975421099">+30 697 542 1099</a>
+      <span>Mount Athos, Greece</span>
+    </div>
+  </div>
+
+  <main id="main">
+    <section class="hero hero--series">
+      <div class="hero__text">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="works.html"><span class="u">Works</span></a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page" id="s-crumb"></span>
+        </nav>
+        <div class="series-heading">
+          <p class="eyebrow rise" id="s-num"></p>
+          <h1 class="rise d1" id="s-title"></h1>
+          <p class="place rise d2" id="s-place"></p>
+        </div>
+        <div class="series-info">
+          <dl class="placard" id="s-placard"></dl>
+          <p class="series-description" id="s-description" hidden></p>
+        </div>
+      </div>
+      <div class="hero__media" id="s-hero"></div>
+    </section>
+
+    <section class="feature" id="s-feature" hidden></section>
+
+    <section class="wrap plates" id="s-plates-wrap" hidden>
+      <h2 class="sr-only">More photographs</h2>
+      <div class="masonry" id="s-plates"></div>
+    </section>
+
+    <nav class="wrap pager" aria-label="More series" id="s-pager"></nav>
+  </main>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Photograph viewer">
+    <div class="lightbox__top">
+      <span class="caps" id="lb-title"></span>
+      <button class="lb-btn" type="button" data-lb="close" aria-label="Close viewer">Close <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M2 2l12 12M14 2L2 14"/></svg></button>
+    </div>
+    <div class="lightbox__stage" id="lb-stage">
+      <button class="lb-btn lb-prev" type="button" data-lb="prev" aria-label="Previous photograph"><svg width="28" height="10" viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M28 5H2M6 1L2 5l4 4"/></svg></button>
+      <img id="lb-img" alt="">
+      <button class="lb-btn lb-next" type="button" data-lb="next" aria-label="Next photograph"><svg width="28" height="10" viewBox="0 0 28 10" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M0 5h26M22 1l4 4-4 4"/></svg></button>
+    </div>
+    <div class="lightbox__bottom">
+      <span class="caps" id="lb-count"></span>
+      <span class="caps lightbox__hint">Swipe or use the arrow keys</span>
+    </div>
+  </dialog>
+
+  <div class="dark">
+    <section class="closing" data-reveal>
+      <p class="eyebrow">Commissions</p>
+      <h2>Every stone holds a story waiting to be revealed.</h2>
+      <p class="lead" style="max-width: none">Let’s create something timeless together. Available for commissions worldwide.</p>
+      <div class="closing__actions">
+        <a class="btn btn--light" href="contact.html">Start a commission</a>
+        <a class="closing__mail" href="mailto:narikaleli1@gmail.com"><span class="u">narikaleli1@gmail.com</span></a>
+      </div>
+    </section>
+    <footer class="site-footer wrap">
+      <div class="footer-row">
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="works.html"><span class="u">Works</span></a>
+          <a href="index.html#about"><span class="u">About</span></a>
+          <a href="contact.html"><span class="u">Contact</span></a>
+        </nav>
+        <div class="footer-contact">
+          <a href="mailto:narikaleli1@gmail.com">narikaleli1@gmail.com</a>
+          <a href="tel:+306975421099">+30 697 542 1099</a>
+          <span>Mount Athos, Greece</span>
+        </div>
+      </div>
+      <p class="engraved" aria-hidden="true">IRAKLIS</p>
+      <p class="footer-bottom"><span>© <span data-year>2026</span> Iraklis. All rights reserved.</span><span class="serif-italic">Sculpting eternity in stone.</span></p>
+    </footer>
+  </div>
+</body>
+</html>
